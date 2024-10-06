@@ -7,3 +7,4 @@ Template repository of Svelte app.
 - Vite
 - Tailwind CSS
 - Prettier
+- @tanstack/svelte-query

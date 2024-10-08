@@ -1,13 +1,12 @@
 {
 	"name": "@enuesaa/my-svelte-template",
-	"private": true,
 	"type": "module",
+	"private": true,
 	"license": "MIT",
 	"scripts": {
 		"dev": "rm -rf .svelte-kit && svelte-kit sync && vite dev --port 3000",
 		"build": "vite build",
-		"format": "prettier --write src",
-		"test": "vitest run"
+		"format": "prettier --write src"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.5",

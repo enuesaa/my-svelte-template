@@ -1,7 +1,5 @@
 # misc
 .DS_Store
-
-# editors
 .vscode
 
 # nodejs
@@ -10,3 +8,4 @@ node_modules
 # app
 dist
 .svelte-kit
+.env.local

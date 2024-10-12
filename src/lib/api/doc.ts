@@ -1,7 +1,7 @@
 import { queryGet, mutatePut } from './common'
 
 type GetResponse = {
-  note: string
+	note: string
 }
 export const getDoc = () => queryGet<GetResponse>('/doc')
 

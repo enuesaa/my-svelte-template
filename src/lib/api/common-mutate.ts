@@ -7,7 +7,7 @@ export type MutateOptions = {
 	}
 	invalidate: string[]
 }
-export const mutate = <T extends {}, R extends {}>(
+export const mutate = <T, R>(
 	method: string,
 	path: string,
 	options: Partial<MutateOptions> = {}

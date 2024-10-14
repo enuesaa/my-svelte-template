@@ -6,7 +6,7 @@ export type QueryOptions = {
 		[key: string]: string
 	}
 }
-export const query = <R extends {}>(method: string, path: string, options: Partial<QueryOptions> = {}) => {
+export const query = <R>(method: string, path: string, options: Partial<QueryOptions> = {}) => {
 	const resolvedOptions = { headers: [], ...options }
 
 	return createQuery({

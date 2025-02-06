@@ -13,5 +13,10 @@ Template repository of Svelte app.
 [degit](https://github.com/Rich-Harris/degit) is easy.
 
 ```bash
-degit enuesaa/my-svelte-template
+npx degit enuesaa/my-svelte-template
 ```
+
+## Tailwind CSS V4 with PostCSS @apply directive
+Add `@reference "./app.css";` to each `<style>` block.  
+
+see https://github.com/tailwindlabs/tailwindcss/discussions/13336

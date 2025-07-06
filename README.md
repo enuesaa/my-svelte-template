@@ -1,6 +1,8 @@
 # my-svelte-template
 Template repository of Svelte app.
 
+[![ci](https://github.com/enuesaa/my-svelte-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/enuesaa/my-svelte-template/actions/workflows/ci.yaml)
+
 ## Stacks
 - Svelte v5
 - SvelteKit

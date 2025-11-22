@@ -27,6 +27,11 @@
 		"@tanstack/svelte-query": "^6.0.4",
 		"lucide-svelte": "^0.552.0"
 	},
+	"pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
 	"prettier": {
 		"printWidth": 120,
 		"tabWidth": 2,

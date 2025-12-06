@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PageTitle from '$lib/components/PageTitle.svelte'
+	import EditLink from './EditLink.svelte';
 	import { getPost } from '$lib/api/posts'
 	import type { GetPostQuery } from '$lib/api/posts'
 
@@ -14,7 +15,8 @@
 <PageTitle title="Post" />
 
 {#if post !== undefined && post.data !== undefined}
-	<div>
+	<div class="text-lg my-5 px-3">
 		{post.data.title}
 	</div>
+	<EditLink id={params.id} />
 {/if}

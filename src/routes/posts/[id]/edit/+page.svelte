@@ -7,7 +7,7 @@
 	let post = $derived(getPost(params.id))
 	let update = $derived(updatePost(params.id))
 
-	async function save(e: MouseEvent) {
+	async function handleUpdate(e: MouseEvent) {
 		e.preventDefault()
 		if (post.data === undefined) {
 			return
@@ -23,6 +23,15 @@
 <PageTitle title="Edit" />
 
 {#if post.data !== undefined}
-	<textarea bind:value={post.data.title} class="w-full border p-2"></textarea>
-	<button onclick={save}>save</button>
+	<textarea bind:value={post.data.title} class="w-full text-lg px-3 bg-grayer py-5 outline-none"></textarea>
+	<button onclick={handleUpdate}>save</button>
 {/if}
+
+<style lang="postcss">
+	@reference "#app.css";
+
+	button {
+		@apply inline-block border-b-2 border-dotted cursor-pointer;
+		@apply hover:border-dashed;
+	}
+</style>

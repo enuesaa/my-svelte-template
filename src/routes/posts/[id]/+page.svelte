@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PageTitle from '$lib/components/PageTitle.svelte'
-	import EditLink from './EditLink.svelte';
+	import EditLink from './EditLink.svelte'
 	import { getPost } from '$lib/api/posts'
 
 	let { params } = $props()
@@ -10,7 +10,7 @@
 <PageTitle title="Detail" />
 
 {#if post.data !== undefined}
-	<div class="text-lg my-5 px-3">
+	<div class="text-lg px-3 bg-grayer py-5">
 		{post.data.title}
 	</div>
 	<EditLink id={params.id} />

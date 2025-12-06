@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { ArrowBigRightDash } from 'lucide-svelte'
 
-	let { id }: {id: string} = $props()
+	let { id }: { id: string } = $props()
 </script>
 
 <a href={`/posts/${id}/edit`}>

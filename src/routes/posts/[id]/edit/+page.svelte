@@ -3,9 +3,9 @@
 	import { getPost, updatePost } from '$lib/api/posts'
 	import { goto } from '$app/navigation'
 
-	let { params } = $props()
-	let post = $derived(getPost(params.id))
-	let update = $derived(updatePost(params.id))
+	let { data } = $props()
+	let post = $derived(getPost(data.id))
+	let update = $derived(updatePost(data.id))
 
 	async function handleUpdate(e: MouseEvent) {
 		e.preventDefault()
@@ -16,7 +16,7 @@
 			id: post.data.id,
 			title: post.data.title,
 		})
-		await goto(`/posts/${params.id}`)
+		await goto(`/posts/${data.id}`)
 	}
 </script>
 

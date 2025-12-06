@@ -5,7 +5,7 @@ type Post = {
 	title: string
 }
 export const listPosts = () => queryGet<Post[]>(`/posts`)
-export const getPost = (id: string) => queryGet<Post>(`/posts/${id}`)
+export const getPost = (id: number) => queryGet<Post>(`/posts/${id}`)
 
 type CreatePostRequest = {
 	title: string
@@ -16,4 +16,4 @@ type UpdatePostRequest = {
 	id: number
 	title: string
 }
-export const updatePost = (id: string) => mutatePut<UpdatePostRequest, {}>(`/posts/${id}`)
+export const updatePost = (id: number) => mutatePut<UpdatePostRequest, {}>(`/posts/${id}`)

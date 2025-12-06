@@ -3,8 +3,8 @@
 	import EditLink from './EditLink.svelte'
 	import { getPost } from '$lib/api/posts'
 
-	let { params } = $props()
-	let post = $derived(getPost(params.id))
+	let { data } = $props()
+	let post = $derived(getPost(data.id))
 </script>
 
 <PageTitle title="Detail" />
@@ -13,5 +13,5 @@
 	<div class="text-lg px-3 bg-grayer py-5">
 		{post.data.title}
 	</div>
-	<EditLink id={params.id} />
+	<EditLink id={data.id} />
 {/if}

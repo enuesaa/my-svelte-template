@@ -1,8 +1,7 @@
 import { query, type QueryOptions } from './common-query'
 import { mutate, type MutateOptions } from './common-mutate'
 
-export const queryGet = <R>(path: string, options: Partial<QueryOptions> = {}) =>
-	query<R>('GET', path, options)
+export const queryGet = <R>(path: string, options: Partial<QueryOptions> = {}) => query<R>('GET', path, options)
 
 export const mutatePost = <T, R>(path: string, options: Partial<MutateOptions> = {}) =>
 	mutate<T, R>('POST', path, options)

@@ -7,11 +7,7 @@ export type MutateOptions = {
 	}
 	invalidate: string[]
 }
-export const mutate = <T, R>(
-	method: string,
-	path: string,
-	options: Partial<MutateOptions> = {}
-) => {
+export const mutate = <T, R>(method: string, path: string, options: Partial<MutateOptions> = {}) => {
 	const resolvedOptions = { headers: [], invalidate: [], ...options }
 	const queryClient = getQueryClientContext()
 

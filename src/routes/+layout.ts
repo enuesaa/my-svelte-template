@@ -1,1 +1,2 @@
-export const prerender = true
+// To make ssg, enable this.
+// export const prerender = true

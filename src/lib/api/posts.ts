@@ -6,7 +6,6 @@ type Post = {
 }
 export const listPosts = () => queryGet<Post[]>(`/posts`)
 export const getPost = (id: string) => queryGet<Post>(`/posts/${id}`)
-export type GetPostQuery = ReturnType<typeof getPost>
 
 type CreatePostRequest = {
 	title: string
@@ -18,4 +17,3 @@ type UpdatePostRequest = {
 	title: string
 }
 export const updatePost = (id: string) => mutatePut<UpdatePostRequest, {}>(`/posts/${id}`)
-export type UpdatePostMutation = ReturnType<typeof updatePost>

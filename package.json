@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "rm -rf .svelte-kit && svelte-kit sync && vite dev --port 3000",
 		"build": "vite build",
-		"format": "prettier --write src"
+		"format": "prettier --write {src,package.json}"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",
@@ -31,9 +31,9 @@
 			"esbuild"
 		]
 	},
-  "imports": {
-    "#app.css": "./src/routes/app.css"
-  },
+	"imports": {
+		"#app.css": "./src/routes/app.css"
+	},
 	"prettier": {
 		"printWidth": 120,
 		"tabWidth": 2,

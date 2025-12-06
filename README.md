@@ -20,7 +20,7 @@ npx degit enuesaa/my-svelte-template
 
 ## Tailwind CSS V4 with PostCSS @apply directive
 Add `@reference "./app.css";` to each `<style>` block.  
-see https://github.com/tailwindlabs/tailwindcss/discussions/13336
+https://github.com/tailwindlabs/tailwindcss/discussions/13336
 
 Subpath Import is also useful.  
-see https://tailwindcss.com/docs/functions-and-directives#subpath-imports
+https://tailwindcss.com/docs/functions-and-directives#subpath-imports

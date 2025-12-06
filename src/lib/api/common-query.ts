@@ -9,7 +9,7 @@ export type QueryOptions = {
 export const query = <R>(method: string, path: string, options: Partial<QueryOptions> = {}) => {
 	const resolvedOptions = { headers: [], ...options }
 
-	return createQuery({
+	return createQuery(() => ({
 		queryKey: [path],
 		queryFn: async (): Promise<R> => {
 			const res = await fetch(`${PUBLIC_API_ENDPOINT_BASE}${path}`, {
@@ -22,5 +22,5 @@ export const query = <R>(method: string, path: string, options: Partial<QueryOpt
 			const data = await res.json()
 			return data
 		},
-	})
+	}))
 }

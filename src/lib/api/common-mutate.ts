@@ -11,7 +11,7 @@ export const mutate = <T, R>(method: string, path: string, options: Partial<Muta
 	const resolvedOptions = { headers: [], invalidate: [], ...options }
 	const queryClient = getQueryClientContext()
 
-	return createMutation({
+	return createMutation(() => ({
 		mutationFn: async (body: T): Promise<R> => {
 			const res = await fetch(`${PUBLIC_API_ENDPOINT_BASE}${path}`, {
 				method,
@@ -26,5 +26,5 @@ export const mutate = <T, R>(method: string, path: string, options: Partial<Muta
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: resolvedOptions.invalidate })
 		},
-	})
+	}))
 }

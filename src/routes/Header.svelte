@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<a href="/">
+	<a href="/" class="inline-block">
 		<h1>
 			my-svelte-template <Cloudy class="inline" />
 		</h1>
@@ -14,9 +14,9 @@
 	@reference "#app.css";
 
 	header {
-		@apply container mx-auto pt-2 pb-4;
+		@apply container mx-auto pt-2 pb-4 mb-4;
 	}
 	h1 {
-		@apply font-zenkaku text-2xl font-bold px-3;
+		@apply font-zenkaku text-2xl font-bold px-2;
 	}
 </style>

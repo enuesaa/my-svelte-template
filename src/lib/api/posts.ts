@@ -8,12 +8,7 @@ type Post = {
 }
 export const listPosts = () => queryGet<Post[]>(`/posts`)
 export const getPost = (id: string) => queryGet<Post>(`/posts/${id}`)
-
-type Param = {
-	id: string
-}
-type fn = () => Param
-export const getPost2 = (fn: fn) => queryGet<Post>(`/posts/${fn().id}`)
+export type GetPostQuery = ReturnType<typeof getPost>
 
 type CreatePostRequest = {
 	title: string

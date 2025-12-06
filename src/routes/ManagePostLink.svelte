@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowBigRightDash } from 'lucide-svelte';
+	import { ArrowBigRightDash } from 'lucide-svelte'
 </script>
 
 <a href="/posts">

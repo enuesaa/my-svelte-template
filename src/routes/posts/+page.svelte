@@ -7,11 +7,12 @@
 
 <PageTitle title="Posts" />
 
-
 {#if posts.data}
-	<ul>
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-0 m-0 list-none">
 	{#each posts.data as post}
-		<li>{post.title}</li>
+		<a href={`/posts/${post.id}`} class="bg-grayer border-grayer rounded-xl p-4 border shadow-sm h-full transition-transform duration-150 hover:-translate-y-1 hover:shadow-lg">
+			{post.title}
+		</a>
 	{/each}
-	</ul>
+	</div>
 {/if}

@@ -18,3 +18,4 @@ jobs:
           version: '11'
 
       - run: pnpm install
+      - run: pnpm build

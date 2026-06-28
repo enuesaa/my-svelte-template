@@ -8,6 +8,10 @@
 		"build": "vite build",
 		"format": "prettier --write {src,package.json}"
 	},
+	"dependencies": {
+		"@tanstack/svelte-query": "^6.1.35",
+		"lucide-svelte": "^1.0.1"
+	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.68.0",
@@ -20,10 +24,6 @@
 		"tailwindcss": "^4.3.1",
 		"typescript": "^6.0.3",
 		"vite": "^8.1.0"
-	},
-	"dependencies": {
-		"@tanstack/svelte-query": "^6.1.35",
-		"lucide-svelte": "^1.0.1"
 	},
 	"imports": {
 		"#app.css": "./src/routes/app.css"

@@ -27,25 +27,5 @@
 	},
 	"imports": {
 		"#app.css": "./src/routes/app.css"
-	},
-	"prettier": {
-		"printWidth": 120,
-		"tabWidth": 2,
-		"semi": false,
-		"singleQuote": true,
-		"endOfLine": "lf",
-		"trailingComma": "es5",
-		"plugins": [
-			"prettier-plugin-svelte"
-		],
-		"useTabs": true,
-		"overrides": [
-			{
-				"files": "*.svelte",
-				"options": {
-					"parser": "svelte"
-				}
-			}
-		]
 	}
 }

@@ -1,5 +1,5 @@
 # my-svelte-template
-Template repository of Svelte app.
+A template repository for Svelte apps.
 
 [![ci](https://github.com/enuesaa/my-svelte-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/enuesaa/my-svelte-template/actions/workflows/ci.yaml)
 

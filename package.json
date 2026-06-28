@@ -25,11 +25,6 @@
 		"@tanstack/svelte-query": "^6.1.26",
 		"lucide-svelte": "^1.0.1"
 	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild"
-		]
-	},
 	"imports": {
 		"#app.css": "./src/routes/app.css"
 	},

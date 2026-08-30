@@ -5,9 +5,8 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "rm -rf .svelte-kit && svelte-kit sync && vite dev --port 3000",
-		"build": "pnpm build:ssr",
-		"build:ssr": "VITE_BUILD_TARGET=ssr vite build",
-		"build:ssg": "VITE_BUILD_TARGET=ssg vite build",
+		"build": "vite build",
+		"build:ssr": "VITE_BUILD_SSR=true vite build",
 		"format": "prettier --write {src,package.json}"
 	},
 	"dependencies": {

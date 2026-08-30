@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "rm -rf .svelte-kit && svelte-kit sync && vite dev --port 3000",
-		"build": "vite build",
+		"build": "pnpm build:ssr",
+		"build:ssr": "VITE_BUILD_TARGET=ssr vite build",
+		"build:ssg": "VITE_BUILD_TARGET=ssg vite build",
 		"format": "prettier --write {src,package.json}"
 	},
 	"dependencies": {
@@ -13,6 +15,7 @@
 		"lucide-svelte": "^1.0.1"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-node": "^5.5.7",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.70.1",
 		"@sveltejs/vite-plugin-svelte": "7.2.0",

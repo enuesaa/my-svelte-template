@@ -1,2 +1,1 @@
-// To make ssg, enable this.
-// export const prerender = true
+export const prerender = import.meta.env.VITE_BUILD_TARGET === 'ssg'
